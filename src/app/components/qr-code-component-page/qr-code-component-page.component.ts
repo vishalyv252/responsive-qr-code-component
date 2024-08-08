@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-qr-code-component-page',
   templateUrl: './qr-code-component-page.component.html',
-  styleUrl: './qr-code-component-page.component.css'
+  styleUrl: './qr-code-component-page.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class QrCodeComponentPageComponent {
 
