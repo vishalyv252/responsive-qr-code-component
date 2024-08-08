@@ -1,0 +1,14 @@
+<main class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Light_gray">
+  <!-- Centering the article in the middle of the screen -->
+  <article class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-10">
+    <!-- Section for displaying status code and description -->
+    <section class="flex flex-col justify-center items-center h-auto w-auto font-Outfit">
+      <!-- Display status code (e.g., error code) -->
+      <h1 class="font-bold text-Dark_blue text-5xl">{{status_code}}</h1>
+      <!-- Description of the status code -->
+      <p class="font-normal text-Grayish_blue text-xl my-2">{{status_code_description}}</p>
+      <!-- Button to navigate back to the home page -->
+      <button class="font-normal bg-White text-Dark_blue border-solid border-2 border-White transition-all ease-in-out duration-100 hover:bg-transparent text-[15px] rounded-2xl px-5 py-3" [routerLink]="['/']">{{button_name}}</button>
+    </section>
+  </article>
+</main>

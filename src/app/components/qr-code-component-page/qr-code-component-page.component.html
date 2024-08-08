@@ -1,0 +1,14 @@
+<main class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Light_gray">
+  <!-- Centering the article in the middle of the screen -->
+  <article class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-10">
+    <!-- Section for the QR code component with responsive design -->
+    <section class="flex flex-col justify-center items-center bg-White font-Outfit drop-shadow-2xl h-auto w-80 p-4 rounded-2xl Small_Mobile_Design_View:w-64 Small_Mobile_Design_View:p-3 Small_Mobile_Design_View:rounded-xl">
+      <!-- QR code image -->
+      <img [src]="image_path_link" [alt]="image_description" class="h-72 w-72 rounded-lg Small_Mobile_Design_View:h-56 Small_Mobile_Design_View:w-56 Small_Mobile_Design_View:rounded-md" />
+      <!-- Title of the component -->
+      <h1 class="font-bold text-Dark_blue text-center text-[22px] w-72 leading-7 my-4 Small_Mobile_Design_View:text-base Small_Mobile_Design_View:w-48">{{title}}</h1>
+      <!-- Description of the component -->
+      <p class="font-normal text-Grayish_blue text-center text-[15px] w-64 leading-5 mb-4 Small_Mobile_Design_View:text-xs Small_Mobile_Design_View:w-48">{{description}}</p>
+    </section>
+  </article>
+</main>
